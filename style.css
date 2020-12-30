@@ -2,7 +2,6 @@
 html:active{
     background-image: url("mem.png");
     background-size: 25%;
-    background-repeat: ;
 }
 h1{
     font-size: 6em;
@@ -124,8 +123,6 @@ h1:hover:before {
 }
 .button:hover{
     transform: scale(1.1);
-
-
 }
 .button:active{
     transform: scale(0.8);
