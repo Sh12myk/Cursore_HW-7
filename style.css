@@ -55,6 +55,7 @@ h1:hover:before {
     box-shadow: inset 2px 3px goldenrod, 12px 12px 2px 2px goldenrod;
     transition: all 0.1s linear;
     transform: translate(-50%, -50%);
+    cursor: pointer ;
 }
 .block:hover{
     box-shadow: none;
