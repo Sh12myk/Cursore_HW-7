@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+html:active{
+    background-image: url("mem.png");
+    background-size: 25%;
+    background-repeat: ;
+}
+h1{
+    font-size: 6em;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    text-shadow: 1px 1px 2px gold, 0 0 1em goldenrod, 0 0 0.2em darkgoldenrod;
+    border-bottom: 10px solid black;
+    position: relative;
+    border-radius: 10px;
+}
+
+h1:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: goldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transform-origin: left;
+    transform: scale(0);
+    transition: 0.25s linear;
+    border-radius: 0 0 10px 10px;
+}
+
+h1:hover:before {
+    transform: scale(1);
+    box-shadow: 1px 1px 2px gold, 0 0 1em goldenrod, 0 0 0.2em darkgoldenrod;;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(6,50px);
+    gap: 35px 35px;
+    margin: auto;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+}
+.block {
+    background-color: gray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    border: 4px goldenrod;
+    border-style: dashed double outset;
+    border-radius: 3px;
+    box-shadow: inset 2px 3px goldenrod, 12px 12px 2px 2px goldenrod;
+    transition: all 0.1s linear;
+    transform: translate(-50%, -50%);
+}
+.block:hover{
+    box-shadow: none;
+    opacity: 0.65;
+    transform: scale(0.95);
+}
+.block:active{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+}
+
+.container .block:nth-last-child(-n+4) {
+    background-color: #3244a8;
+}
+.container .block:nth-child(4n+3) {
+    background-color: #ff2b2b;
+}
+.button_wrapper{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin-bottom: 20em;
+}
+.button{
+    width: 501px;
+    height: 92px;
+    background: #44D3A8;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}
+.button-text{
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+}
+.button::after {
+    display: block;
+    position: relative;
+    content: " ";
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    height: 8px;
+    width: 200px;
+    top: -28%;
+    left: 112%
+}
+.button::before{
+    display: block;
+    position: relative;
+    content: " ";
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    height: 8px;
+    width: 200px;
+    top: 27%;
+    right: 53%;
+
+}
+.button:hover{
+    transform: scale(1.1);
+
+
+}
+.button:active{
+    transform: scale(0.8);
+    color: darkred;
+    border: 1px solid darkred;
+}
