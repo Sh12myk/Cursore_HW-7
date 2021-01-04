@@ -93,12 +93,11 @@ h1:hover:before {
     color: #fff;
     cursor: pointer;
     outline: none;
-
-}
-.button-text{
     font-family: 'Cinzel', serif;
     font-size: 2em;
+
 }
+
 .button::after {
     display: block;
     position: relative;
